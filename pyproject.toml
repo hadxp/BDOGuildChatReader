@@ -1,0 +1,36 @@
+[project]
+name = "BdoGuildChatReader"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = "==3.10.0"
+dependencies = [
+    "wheel",
+	"torch==2.7.1",
+	"transformers",
+	"pillow",
+	"accelerate",
+	"einops",
+	"timm",
+    "mss",
+    "huggingface_hub",
+    "huggingface_hub[hf_xet]",
+    "pyautogui",
+    "keyboard",
+    "scikit-image",
+    "tokenizers==0.22.1",
+]
+
+[[tool.uv.index]]
+name="pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+default = true
+
+[[tool.uv.index]]
+name = "pypi"
+url = "https://pypi.org/simple"
+
+[tool.uv.sources]
+# Tell uv to look for torch, on the custom index
+torch = [ { index = "pytorch-cu128" } ]
+
