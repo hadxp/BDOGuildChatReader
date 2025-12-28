@@ -5,20 +5,24 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = "==3.10.0"
 dependencies = [
-    "wheel",
-	"torch==2.7.1",
-	"transformers",
-	"pillow",
-	"accelerate",
-	"einops",
-	"timm",
-    "mss",
-    "huggingface_hub",
-    "huggingface_hub[hf_xet]",
-    "pyautogui",
-    "keyboard",
-    "scikit-image",
-    "tokenizers==0.22.1",
+    #"wheel",
+    #"torch==2.7.1",
+    #"transformers",
+    #"pillow",
+    #"accelerate",
+    #"einops",
+    #"timm",
+    #"mss",
+    #"huggingface_hub",
+    #"huggingface_hub[hf_xet]",
+    #"pyautogui",
+    #"keyboard",
+    #"scikit-image",
+    #"tokenizers==0.22.1",
+    #"discord",
+    #"easyocr",
+    #"zeep",
+    "psutil",
 ]
 
 [[tool.uv.index]]
